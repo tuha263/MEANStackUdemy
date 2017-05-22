@@ -6,7 +6,7 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/message/:msg', function(req, res, next) {
-  if (req.params.msg == null) {
+  if (req.params.msg === null) {
     res.render('node', {
       message: 'null'
     });
@@ -19,7 +19,6 @@ router.get('/message/:msg', function(req, res, next) {
 
 router.post('/message', function(req, res, next) {
   var message = req.body.message;
-  res.redirect('/message/' + message);
 });
 
 module.exports = router;
