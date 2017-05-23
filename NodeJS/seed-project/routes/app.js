@@ -1,24 +1,8 @@
 var express = require('express');
 var router = express.Router();
 
-router.get('/', function(req, res, next) {
+router.get('/', function (req, res, next) {
   res.render('index');
-});
-
-router.get('/message/:msg', function(req, res, next) {
-  if (req.params.msg === null) {
-    res.render('node', {
-      message: 'null'
-    });
-  } else {
-    res.render('node', {
-      message: req.params.msg
-    });
-  }
-});
-
-router.post('/message', function(req, res, next) {
-  var message = req.body.message;
 });
 
 module.exports = router;
