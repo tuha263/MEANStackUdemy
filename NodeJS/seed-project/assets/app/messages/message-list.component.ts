@@ -13,8 +13,7 @@ import { Message } from "./message.model";
                 *ngFor="let message of messages">
             </app-message>
         </div>
-    `,
-    providers: [MessageService]
+    `
 })
 export class MessageListComponent implements OnInit{
     messages: Message[];
