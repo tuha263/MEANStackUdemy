@@ -1,3 +1,4 @@
+import { routing } from './app.routing';
 import { HeaderComponent } from './header.component';
 import { AuthenticationComponent } from './auth/Authentication.component';
 import { MessagesComponent } from './messages/messages.component';
@@ -20,7 +21,7 @@ import { MessageListComponent } from './messages/message-list.component';
         AuthenticationComponent,
         HeaderComponent
     ],
-    imports: [BrowserModule, FormsModule],
+    imports: [BrowserModule, FormsModule, routing],
     bootstrap: [AppComponent]
 })
 export class AppModule {
