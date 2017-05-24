@@ -6,8 +6,8 @@ import { Component, OnInit } from '@angular/core';
         <header class="row">
             <nav class="col-md-8 col-md-offset-2">
                 <ul class="nav nav-pills">
-                    <li><a >Messager</a></li>
-                    <li><a >Authentication</a></li>
+                    <li routerLinkActive="active"><a [routerLink]="['/messages']">Messager</a></li>
+                    <li routerLinkActive="active"><a [routerLink]="['/auth']">Authentication</a></li>
                 </ul>
             </nav>
         </header>
