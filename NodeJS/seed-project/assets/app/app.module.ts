@@ -1,3 +1,4 @@
+import { AuthService } from './auth/auth.service';
 import { HttpModule } from '@angular/http';
 import { SignupComponent } from './auth/signup.component';
 import { SigninComponent } from './auth/signin.component';
@@ -29,6 +30,7 @@ import { MessageListComponent } from './messages/message-list.component';
         SignupComponent
     ],
     imports: [BrowserModule, FormsModule, routing, ReactiveFormsModule, HttpModule],
+    providers: [AuthService],
     bootstrap: [AppComponent]
 })
 export class AppModule {
